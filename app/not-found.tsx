@@ -3,7 +3,7 @@ import css from './Home.module.css';
 
 export default function NotFound() {
   return (
-    <main className={css.main}>
+    <div className={css.main}>
       <div className={css.container}>
         <h1 className={css.title}>404 - Page not found</h1>
         <p className={css.description}>
@@ -11,11 +11,15 @@ export default function NotFound() {
         </p>
         <Link
           href="/"
-          style={{ color: '#0d6efd', textDecoration: 'underline' }}
+          style={{
+            color: '#0d6efd',
+            textDecoration: 'underline',
+            fontSize: '16px',
+          }}
         >
           Go back to Home
         </Link>
       </div>
-    </main>
+    </div>
   );
 }
