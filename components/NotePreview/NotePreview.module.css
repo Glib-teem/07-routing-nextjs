@@ -1,10 +1,6 @@
 .container {
   max-width: 800px;
-  margin: 32px auto;
-  padding: 24px;
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 0;
 }
 
 .item {
@@ -21,7 +17,7 @@
   padding-bottom: 8px;
 }
 
-.header h2 {
+.title {
   margin: 0;
   font-size: 28px;
   color: #333;
@@ -56,13 +52,28 @@
 
 .backBtn {
   align-self: flex-start;
-  padding: 6px 12px;
+  padding: 8px 16px;
+  margin-bottom: 8px;
   font-size: 14px;
-  color: #000000;
-  border: none;
+  font-weight: 500;
+  color: #0d6efd;
+  background-color: transparent;
+  border: 1px solid #0d6efd;
   border-radius: 4px;
   cursor: pointer;
-  text-decoration: underline;
-  display: inline-block;
-  background-color: transparent;
+  transition: all 0.2s ease;
+}
+
+.backBtn:hover {
+  background-color: #0d6efd;
+  color: #ffffff;
+}
+
+.backBtn:active {
+  transform: scale(0.98);
+}
+
+.backBtn:focus {
+  outline: 2px solid #0d6efd;
+  outline-offset: 2px;
 }

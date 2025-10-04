@@ -27,6 +27,7 @@ const NotePreview = ({ note }: NotePreviewProps) => {
         <button
           onClick={handleBack}
           className={css.backBtn}
+          type="button"
         >
           ← Back
         </button>

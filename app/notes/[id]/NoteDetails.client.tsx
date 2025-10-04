@@ -59,6 +59,7 @@ const NoteDetailsClient = ({ noteId }: NoteDetailsClientProps) => {
         <button
           onClick={handleBack}
           className={css.backBtn}
+          type="button"
         >
           ← Back
         </button>
